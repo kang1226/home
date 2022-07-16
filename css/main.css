@@ -23,14 +23,14 @@ img.mainIcon{
 }
 /* HEADER */
 header{
-  background-color: royalblue;
+  background-color: #f6f5f0;
+  border-bottom: 5px solid #847c6b;
 }
 header .inner{
-  width: 1100px;
+  width: 1000px;
   height: 120px;
   /* 0 상하 , auto 좌우 자동 중앙 정렬됨 */
   margin: 0 auto;
-  background-color: orange;
   position:relative;
 }
 header .logo{
@@ -41,7 +41,10 @@ header .logo{
   margin:auto 0;
 }
 header .sub-menu{
- display:flex;
+position: absolute;
+top: 10px;
+right:0;
+display:flex;
 }
 header .sub-menu ul.menu {
   /* 수평정렬 */
@@ -95,8 +98,6 @@ header .sub-menu .search input {
 }
 header .sub-menu .search input:focus {
   width: 190px;
-  border-color: #9ec7fd;
-
 }
 header .sub-menu .search .material-icons {
   height: 24px;
@@ -105,4 +106,12 @@ header .sub-menu .search .material-icons {
   bottom: 0;
   right: 5px;
   margin: auto;
+  transition: 0.4s;
 }
+
+header .sub-menu .search.focused .material-icons {
+  opacity: 0;
+}
+
+
+header .main.menu
